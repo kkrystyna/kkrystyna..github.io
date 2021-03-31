@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title>Register</title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css" />
+    <body id="register">
+  </head>  
+  <body>
+    <div class="header">
+        <p class="logo">EasyEnglish</p>
+    </div>
+    <div class="containerr" >
+        <div class="form-containerr">
+            <form action="register.html">
+                <h1>Register</h1>
+                <label for="fname" class="text_register">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname" class="text_register">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your surname..">
+                <label for="password" class="text_register">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password..">
+                <label for="text" class="text_register">Phone number</label>
+                <input type="text" id="number" name="number" placeholder="Your phone number..">
+                <label for="email" class="text_register">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <h3 class="text_register">Role</h3>
+                <div>
+                <input type="checkbox" id="student" name="student" class="input_box">
+                <label for="student" class="text_register">Student</label>
+          
+                <input type="checkbox" id="lecturer" name="lecturer" class="input_box">
+                <label for="female" class="text_register">Lecturer</label>
+                </div>   
+                
+                <button type="submit"  onclick="location.href='profile.html'">Register</button>
+
+                <a href="login.html">
+                    <p>Login</p>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>

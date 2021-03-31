@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Profile</title>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style2.css" />
+        <body id="profile">
+    </head>  
+    <body>
+    <div class="header">
+        <p class="logo">EasyEnglish</p>
+    </div>
+    <div class="topnav">
+        <a href="courses.html">Courses</a>
+        <a href="lecturers.html">Lecturers</a>
+        <a href="profile.html">Profile</a>
+        <a href="about_us.html">About us</a>
+    </div>
+    <div class="container" >
+        <div class="profile_container">
+            <div class="pbox">
+            <h2>Your profile</h2>
+            
+            </div>
+            <ul>
+            <li><span class="tag">First name:</span><span class="info" >Khrystyna</span></li>
+            <li><span class="tag">Last name:</span><span class="info" >Kmit</span></li>
+            <li><span class="tag">Email:</span><span class="info" >email@eee.ee</span></li>
+            <li><span class="tag">Phone number:</span><span class="info" >+380111111222</span></li>
+            <li><span class="tag">Role:</span><span class="info" >Student</span></li>
+            <div class="butt">
+            <button type="button"  onclick="location.href='edit_user.html'">Edit</button>
+            <button type="submit"  onclick="location.href='login.html'">Log out</button>
+            <button type="delete"  onclick="location.href='register.html'">Delete</button>
+            </div>   
+            <div class="alert danger">
+                <span class="closebtn">&times;</span>  
+                <strong>After deleting</strong> you will not be able to enter this accout again.
+              </div>
+        </div>
+    </div>
+    <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+        }
+    </script> 
+    </body>
+</html>
